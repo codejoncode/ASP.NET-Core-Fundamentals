@@ -31,3 +31,7 @@ C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\obj\Debug
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.pdb
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csproj.CopyComplete
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\List.g.cshtml.cs
+C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Core.dll
+C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Data.dll
+C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Data.pdb
+C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Core.pdb

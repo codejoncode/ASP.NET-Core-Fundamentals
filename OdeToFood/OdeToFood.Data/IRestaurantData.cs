@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using OdeToFood.Core;
 
@@ -28,7 +29,10 @@ namespace OdeToFood.Data
         }
         public IEnumerable<Restaurant> GetAll()
         {
-            
+            //linq query  using System.Linq required 
+            return from r in restaurants
+                   orderby r.Name
+                   select r;
         }
     }
 }
