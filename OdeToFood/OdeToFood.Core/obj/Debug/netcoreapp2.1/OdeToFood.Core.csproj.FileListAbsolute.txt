@@ -6,3 +6,4 @@ C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood.Core\obj\
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.AssemblyInfo.cs
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.dll
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.pdb
+C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.csprojAssemblyReference.cache

@@ -1,9 +1,10 @@
 ﻿@page "{restaurantId:int}"
 @* This says that in order to reach this path you have to reach 
     Restaurants/Detail but also needs id  the ? would make it optional but the third paramater would still be id. 
-    so "restaurantId?:int" would allow for the restaurantId to be optional but in this case we need the restaurantId 
+    so "{restaurantId?:int}" would allow for the restaurantId to be optional but in this case we need the restaurantId 
     to do the work so no question mark is used  : int says that the value should be parsable to a int. 
-
+    curly braces required or a 404 error will still be present.   Overall this will allow one to go directly to /Restaurants/19 and get data if 
+    an id is present for 19 linked to a restaurant.   While clicking on the link to get to this page would have created a query on the url.
     *@
 @model OdeToFood.Pages.Restaurants.DetailModel
 @{

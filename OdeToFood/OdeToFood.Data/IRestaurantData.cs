@@ -14,6 +14,7 @@ namespace OdeToFood.Data
           classes are private by default. Without explicitly calling public it is inaccessible.  
         */
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+        Restaurant GetById(int id);
     }
     public class InMemoryRestaurantData : IRestaurantData
     {
@@ -27,6 +28,10 @@ namespace OdeToFood.Data
                 new Restaurant {Id = 3, Name = "La Costa", Location= "Califorina", Cuisine=CuisineType.Mexican}
             };
         }
+        public Restaurant GetById(int id)
+        {
+            return restaurants.SingleOrDefault(r => r.Id == id);
+        }
         //  name is a optional parmater 
         public IEnumerable<Restaurant> GetRestaurantsByName( string name = null)
         {
@@ -36,5 +41,7 @@ namespace OdeToFood.Data
                    orderby r.Name
                    select r;
         }
+
+        
     }
 }
