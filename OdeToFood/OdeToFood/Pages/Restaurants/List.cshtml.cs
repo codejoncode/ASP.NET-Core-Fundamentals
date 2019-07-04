@@ -25,11 +25,14 @@ namespace OdeToFood.Pages.Restaurants
             this.config = config;
             this.restaurantData = restaurantData;
         }
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
+            //model binding will look for something that is named searchTerm
+
+            
             //gets the value from appsettings.json
             Message = config["Message"];
-            Restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetRestaurantsByName(searchTerm);
         }
     }
 }

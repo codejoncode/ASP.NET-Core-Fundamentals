@@ -13,7 +13,7 @@ namespace OdeToFood.Data
         /*Experienced  error  Restaurant inaccessible due to protection level error 
           classes are private by default. Without explicitly calling public it is inaccessible.  
         */
-        IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetRestaurantsByName(string name);
     }
     public class InMemoryRestaurantData : IRestaurantData
     {
@@ -27,10 +27,12 @@ namespace OdeToFood.Data
                 new Restaurant {Id = 1, Name = "La Costa", Location= "Califorina", Cuisine=CuisineType.Mexican}
             };
         }
-        public IEnumerable<Restaurant> GetAll()
+        //  name is a optional parmater 
+        public IEnumerable<Restaurant> GetRestaurantsByName( string name = null)
         {
             //linq query  using System.Linq required 
             return from r in restaurants
+                   where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
         }
