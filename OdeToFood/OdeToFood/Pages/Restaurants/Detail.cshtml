@@ -1,4 +1,10 @@
-﻿@page
+﻿@page "{restaurantId:int}"
+@* This says that in order to reach this path you have to reach 
+    Restaurants/Detail but also needs id  the ? would make it optional but the third paramater would still be id. 
+    so "restaurantId?:int" would allow for the restaurantId to be optional but in this case we need the restaurantId 
+    to do the work so no question mark is used  : int says that the value should be parsable to a int. 
+
+    *@
 @model OdeToFood.Pages.Restaurants.DetailModel
 @{
     ViewData["Title"] = "Detail";
@@ -9,7 +15,7 @@
     Id: @Model.Restaurant.Id
 </div>
 <div>
-  Location: @Model.Restaurant.Location
+    Location: @Model.Restaurant.Location
 </div>
 <div>
     Cusine : @Model.Restaurant.Cuisine
