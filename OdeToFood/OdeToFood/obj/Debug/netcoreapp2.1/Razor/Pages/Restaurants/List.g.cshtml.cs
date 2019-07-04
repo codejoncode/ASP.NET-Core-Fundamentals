@@ -53,7 +53,7 @@ using OdeToFood;
             WriteLiteral("\r\n<h1>Restaurants</h1>\r\n");
             EndContext();
             BeginContext(56, 768, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce1a5849a9954144a40415102b197d65", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "380005000ff64763976cd9e232514587", async() => {
                 BeginContext(75, 67, true);
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n        <div class=\"input-group\">\r\n");
                 EndContext();
@@ -61,7 +61,7 @@ using OdeToFood;
                 WriteLiteral("            ");
                 EndContext();
                 BeginContext(513, 66, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "79ecb4d8cce24c7cbacb6b24d4c6b87e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7c83b1fabb704aa08efe59eba271bb39", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
