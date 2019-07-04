@@ -7,7 +7,11 @@
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type ="search" class= "form-control" value="" name="searchTerm"/>
+            @*asp-for works like setting value to SearchTerm and name but says this input is for the following
+                property you will find on the model using asp-for keeps us from having to says Model.SearchTerm
+                it says the name and value (almost like two way data binding) works for the input and the output
+                *@
+            <input type ="search" class= "form-control" asp-for="SearchTerm"/>
             <span class="input-group-btn">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-search"></i>
