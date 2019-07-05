@@ -36,3 +36,4 @@ C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Data.pdb
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.Core.pdb
 C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Detail.g.cshtml.cs
+C:\Users\Jonathan\csharp\ASP.NET-Core-Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\NotFound.g.cshtml.cs
