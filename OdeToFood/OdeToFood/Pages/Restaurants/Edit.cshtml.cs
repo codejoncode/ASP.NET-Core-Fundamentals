@@ -44,6 +44,11 @@ namespace OdeToFood.Pages.Restaurants
             {
                 restaurantData.Update(Restaurant);
                 restaurantData.Commit();
+
+                //you never want a resubmission 
+                return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id});
+                //pass the id to the Detail page which is needed after get to the page a get request is made 
+                //pattern post get redirect pattern
             }
 
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();//asp core is stateless without this on post it will not populate
