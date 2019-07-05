@@ -25,15 +25,26 @@ namespace OdeToFood.Pages.Restaurants
             this.restaurantData = restaurantData;
             this.htmlHelper = htmlHelper;
         }
-        public IActionResult OnGet(int restaurantId)
+        public IActionResult OnGet(int? restaurantId)
         {
+            //int? allows for the paramater to be nullable 
+
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            Restaurant = restaurantData.GetById(restaurantId);//will return a restaurant or null if not found
+            if (restaurantId.HasValue)
+            {
+                Restaurant = restaurantData.GetById(restaurantId.Value);//will return a restaurant or null if not found
+            }
+            else
+            {
+                Restaurant = new Restaurant();
+                //could also put in some defaults like Restaurant.Location = 
+            }
             if (Restaurant == null)
             {
                 return RedirectToPage("./NotFound");
             }
             return Page();
+
         }
 
         public IActionResult OnPost ()
