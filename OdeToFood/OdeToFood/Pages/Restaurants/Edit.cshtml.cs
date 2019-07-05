@@ -36,10 +36,18 @@ namespace OdeToFood.Pages.Restaurants
             return Page();
         }
 
-        public IActionResult onPost ()
+        public IActionResult OnPost ()
         {
-            Restaurant = restaurantData.Update(Restaurant);
-            restaurantData.Commit();
+            //This is from all the valicators [Required] in Restaurant.cs file Errors  and AttemptedValue
+            //ModelState["Location"].Errors
+            if(ModelState.IsValid)
+            {
+                restaurantData.Update(Restaurant);
+                restaurantData.Commit();
+            }
+
+            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();//asp core is stateless without this on post it will not populate
+            
             return Page();
         }
     }

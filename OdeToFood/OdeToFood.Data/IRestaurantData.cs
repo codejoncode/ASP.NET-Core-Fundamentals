@@ -35,7 +35,7 @@ namespace OdeToFood.Data
             return restaurants.SingleOrDefault(r => r.Id == id);
         }
 
-        public Restaurant Update(Restaurant updatedRestaurant)
+        public Restaurant Update(Restaurant updatedRestaurant) 
         {
             var restaurant = restaurants.SingleOrDefault(r => r.Id == updatedRestaurant.Id);
             if (restaurant != null)
