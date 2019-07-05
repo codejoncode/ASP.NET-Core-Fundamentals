@@ -67,6 +67,7 @@ namespace OdeToFood.Pages.Restaurants
             }
             
             restaurantData.Commit();
+            TempData["Message"] = "Restaurant saved!";//only available for the next request and then it will disappear. 
             //you never want a resubmission 
             return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
             //pass the id to the Detail page which is needed after get to the page a get request is made 

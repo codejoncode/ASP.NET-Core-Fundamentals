@@ -13,6 +13,8 @@ namespace OdeToFood.Pages.Restaurants
     {
         private readonly IRestaurantData restaurantData;
 
+        [TempData]
+        public string Message { get; set; } //if it finds the value in TempData it will grabe the data
         public Restaurant Restaurant { get; set; }
         public DetailModel (IRestaurantData restaurantData)
         {
