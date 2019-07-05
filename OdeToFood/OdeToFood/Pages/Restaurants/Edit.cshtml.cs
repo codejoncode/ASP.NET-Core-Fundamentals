@@ -51,20 +51,27 @@ namespace OdeToFood.Pages.Restaurants
         {
             //This is from all the valicators [Required] in Restaurant.cs file Errors  and AttemptedValue
             //ModelState["Location"].Errors
-            if(ModelState.IsValid)
+            if(!ModelState.IsValid)
             {
-                restaurantData.Update(Restaurant);
-                restaurantData.Commit();
-
-                //you never want a resubmission 
-                return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id});
-                //pass the id to the Detail page which is needed after get to the page a get request is made 
-                //pattern post get redirect pattern
+                Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();//asp core is stateless without this on post it will not populate 
+                return Page();
             }
 
-            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();//asp core is stateless without this on post it will not populate
+            if(Restaurant.Id > 0)
+            {
+                restaurantData.Update(Restaurant);
+            }
+            else
+            {
+                restaurantData.Add(Restaurant);
+            }
             
-            return Page();
+            restaurantData.Commit();
+            //you never want a resubmission 
+            return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
+            //pass the id to the Detail page which is needed after get to the page a get request is made 
+            //pattern post get redirect pattern
+
         }
     }
 }
