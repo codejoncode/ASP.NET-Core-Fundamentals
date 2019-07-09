@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\OdeToFood",
-    "\\OdeToFood\\OdeToFood"
+    "\\OdeToFood\\OdeToFood",
+    "\\OdeToFood\\OdeToFood\\Pages",
+    "\\OdeToFood\\OdeToFood\\Pages\\Restaurants"
   ],
   "SelectedNode": "\\OdeToFood\\OdeToFood.sln",
   "PreviewInSolutionExplorer": false
